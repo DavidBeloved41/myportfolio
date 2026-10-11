@@ -23,7 +23,12 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     title: `${project.title} | David Atakpa`,
     description: project.shortDescription,
     alternates: { canonical: `/projects/${project.slug}` },
-    openGraph: { title: `${project.title} | David Atakpa`, description: project.shortDescription, type: "article" },
+    openGraph: {
+      url: `/projects/${project.slug}`,
+      title: `${project.title} | David Atakpa`,
+      description: project.shortDescription,
+      type: "article",
+    },
   };
 }
 

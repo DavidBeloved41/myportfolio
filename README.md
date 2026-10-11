@@ -48,7 +48,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-Set `NEXT_PUBLIC_SITE_URL` to the deployed origin when building for production. The local default is `http://localhost:3000`; `.env.example` documents the variable. No secrets or third-party service credentials are required.
+Local development uses `http://localhost:3000` by default and can override it with `NEXT_PUBLIC_SITE_URL`; `.env.example` documents this local setting. Production builds always use `https://david-atakpa.vercel.app` for canonicals, Open Graph URLs, the sitemap, and `robots.txt`, regardless of that local setting. No Vercel environment variable is required for the production origin.
 
 ## Checks and Production Build
 
@@ -59,7 +59,7 @@ npm run build
 npm run start
 ```
 
-The production build can be deployed to Vercel or another host that supports Next.js. Configure `NEXT_PUBLIC_SITE_URL` in the deployment environment so canonical metadata, `robots.txt`, and the sitemap use the correct public origin.
+The production build can be deployed to Vercel or another host that supports Next.js. This portfolio currently uses `https://david-atakpa.vercel.app` as its fixed production origin; update `lib/site.ts` if the production domain changes.
 
 ## Adding a Project
 

@@ -5,6 +5,12 @@ export const metadata = {
   title: "Contact | David Atakpa",
   description: "Contact David Atakpa about software engineering internships, junior developer opportunities, or project collaboration.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    url: "/contact",
+    title: "Contact | David Atakpa",
+    description: "Contact David Atakpa about software engineering internships, junior developer opportunities, or project collaboration.",
+    type: "website",
+  },
 };
 
 const links = [

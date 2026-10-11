@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   description:
     "David Atakpa is a software developer and product builder in Ghana, building practical web, mobile, backend, and AI-powered software.",
   openGraph: {
+    url: "/",
     title: "David Atakpa | Software Developer & Product Builder",
     description:
       "Software projects in development by David Atakpa, a developer based in Ghana.",

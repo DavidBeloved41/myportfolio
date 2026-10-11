@@ -8,6 +8,12 @@ export const metadata = {
   title: "Projects | David Atakpa",
   description: "Explore software products in development by David Atakpa, including LedgerFlow AI and the Job Search App.",
   alternates: { canonical: "/projects" },
+  openGraph: {
+    url: "/projects",
+    title: "Projects | David Atakpa",
+    description: "Explore software products in development by David Atakpa, including LedgerFlow AI and the Job Search App.",
+    type: "website",
+  },
 };
 
 export default function ProjectsPage() {

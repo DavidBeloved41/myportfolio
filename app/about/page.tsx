@@ -15,6 +15,12 @@ export const metadata = {
   title: "About | David Atakpa",
   description: "About David Atakpa, a Ghana-based software developer and product builder working across web, mobile, backend, and AI-powered products.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    url: "/about",
+    title: "About | David Atakpa",
+    description: "About David Atakpa, a Ghana-based software developer and product builder working across web, mobile, backend, and AI-powered products.",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {
